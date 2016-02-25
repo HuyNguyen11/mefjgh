@@ -33,13 +33,80 @@ body {
 .pk-navbar {
 	background-color : #f9f7ef;
 	-webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;	        
+    transition: all 0.4s ease;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);	        
 }
 
 .pk-logo-navbar {
 	transition: all 0.2s ease-in-out;
+   
 }
 
+.pk-logo-navbar img{
+    height: 40px;
+    width : 200px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+
+    .pk-navbar-menu {
+        width: 98%;
+        margin-right: 2px;
+    }
+}
+@media (max-width: 991px) {
+
+    .pk-logo-navbar img{
+        display: block;
+        margin : 5px auto;
+    }
+    
+    #custom-search-input {
+        margin-left: 2px;
+        margin-top: 10px !important;
+    }
+
+    .navbar-toggle {
+        margin-top: 10px;
+        margin-right: 2px;
+    }
+
+    .navbar-collapse {
+        padding-left: 2px !important;
+    }
+
+    .pk-navbar-menu {
+        width: 98%;
+        margin-right: 2px;
+    }
+    .pk-navbar-menu li{
+        width: 100%;
+    }
+
+    .navbar-nav>li {
+       padding-left: none !important;
+       margin: 1px 2px;
+    }
+
+    .navbar-nav li a {
+        line-height: 20px;
+    }    
+}
 .pk-heading-navbar {
 	padding: 10px;
 }
@@ -47,9 +114,7 @@ body {
 
 
 #custom-search-input {
-        margin:0;
         margin-top: 18px;
-        padding: 0;
         transition: all 0.2s ease;
     }
  
@@ -82,9 +147,15 @@ body {
 .search-query:focus + button {
         z-index: 3;   
     }
+.icon-bar {
+     background-color: #ff8100;    
+} 
+.navbar-toggle {
+   border-color: #ff8100;  
+}
 
 /* banner */
 .pk-banner-list-videos {
-	height: 200px;
-	background-color: #ff8100;
+	height: 250px;
+	background-color: #fbb747;
 }
