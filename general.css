@@ -1,0 +1,90 @@
+body {
+	background-color : #f9f7ef;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+
+.navbar-nav>li {
+    padding-left: 5px;
+}
+
+.navbar-nav li a {
+ 	line-height: 40px;
+}
+
+.navbar-nav>li.active>a, 
+.navbar-nav>li.active>a:hover,
+.navbar-nav>li.active>a:focus,
+.navbar-nav>li>a:hover {
+	background-color: #ff8100;
+	color: white;
+}
+
+.navbar-nav>li>a {
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto';    
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pk-navbar {
+	background-color : #f9f7ef;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;	        
+}
+
+.pk-logo-navbar {
+	transition: all 0.2s ease-in-out;
+}
+
+.pk-heading-navbar {
+	padding: 10px;
+}
+
+
+
+#custom-search-input {
+        margin:0;
+        margin-top: 18px;
+        padding: 0;
+        transition: all 0.2s ease;
+    }
+ 
+#custom-search-input .search-query {
+        padding-right: 3px;        
+        padding-left: 3px;        
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+#custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#ff8100;
+    }
+ 
+.search-query:focus + button {
+        z-index: 3;   
+    }
+
+/* banner */
+.pk-banner-list-videos {
+	height: 200px;
+	background-color: #ff8100;
+}
