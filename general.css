@@ -158,4 +158,169 @@ body {
 .pk-banner-list-videos {
 	height: 250px;
 	background-color: #fbb747;
+    text-align: center;
+}
+
+.pk-banner-list-videos h1{
+    padding-top: 100px;
+    color: white; 
+    font-size: 27px;   
+}
+
+.pk-banner-list-videos p{
+    padding-top: 20px;
+    color: white; 
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 300;   
+}
+
+/* video-list */
+.wrapsemibox {
+
+   max-width: 1200px;
+margin: 0px auto;
+background: #fff;
+margin-top: -40px;
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+z-index: 1000;
+position: relative;
+margin-bottom: -40px;
+padding-bottom: 40px;
+border-bottom: medium #ccc;
+padding-top: 0;
+}
+
+.semiboxshadow {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.boxcontainer {
+    border: 1px solid #ededed;
+    border-bottom:  double medium #ececec;
+    background: #fff;
+    font-size: 13px;
+    text-align: center;
+    transition: border 500ms ease-out;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.boxcontainer img{
+    position: relative;
+    max-width: 100%;
+}
+
+.boxcontainer h1 {
+    font-size: 13px;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.boxcontainer p {
+    margin-bottom: 10px;
+    color: #666;
+    padding: 0px 10px;
+}
+
+.pk-filter-button button {
+    float: left;
+    background-color : #ff8100;
+}
+
+/* Footer */
+/* ================ FOOTER ================== */
+.footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #262626;
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 1px solid #333333;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .title {
+    color : gray;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 15px;
+}
+
+.footer .social-links  li {
+    display: inline;
+}
+
+.footer .social-links  .social {
+    max-width: 48px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.footer .social-links  #read-more {
+    padding-top: 25px;
+}
+
+.footer .footer-content .link {
+    list-style : none;
+    padding-left: 0;
+    /* padding-top: 15px; */
+    /* padding-bottom: 7px; */
+}
+.footer .footer-content .link li{
+    padding-bottom: 7px;
+    /* padding-bottom: 7px; */
+}
+
+.footer .footer-content .link a{
+    color: gray;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* padding-bottom: 7px; */
+    font-size: 12px;
+}
+.footer .footer-content .link a:hover{
+    color: white;
+    text-decoration: none;
+    /* padding-bottom: 7px; */
+}
+
+.footer .stylish-input-group .input-group-addon{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #292929;
+    box-shadow: inset 0 2px 3px rgba(0,0,0, .55);
+    /* border-left: none; */
+}
+.footer .stylish-input-group .form-control{
+    border-right: none;
+    box-shadow: inset 0 2px 3px rgba(0,0,0, .55);
+    border-color: #292929;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #999999;
+}
+.footer .stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.footer .btn-submit {
+    margin-top: 7px;
+}
+.footer .btn-submit:hover {
+   background-color:#E84C3D ;
+    color : #fff !important;
+    border-color : #cd3c2e;
 }

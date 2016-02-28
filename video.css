@@ -1,0 +1,88 @@
+.pk-video-fields {
+	background-color: #fbb747;
+	padding-top: 80px;
+}
+
+.pk-video-fields button{
+	background-color: #ff8100;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.pk-video {
+	/* video-list */
+
+	margin: 0px auto;
+	background: #444;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+	z-index: 1000;
+	position: relative;
+	padding-bottom: 30px;
+	border-bottom: medium #ccc;
+	padding-top: 30px;
+}
+
+.pk-video-content .pk-nav-tabs {
+    border-bottom: 1px solid #999;
+    background-color: #fbb747;
+    color: white;
+}
+
+.pk-video-content .pk-nav-tabs li a,
+.pk-video-content .pk-nav-tabs li a:hover,
+.pk-video-content .pk-nav-tabs li a:active{
+    color: white;
+    border-radius: 0px !important;
+    border: 0px;
+    border-right: 1px solid #ff8100;
+}
+.pk-video-content .pk-nav-tabs li.active a,
+.pk-video-content .pk-nav-tabs a:hover,
+.pk-video-content .pk-nav-tabs a:active {
+    background-color: #ff8100;
+}
+
+
+
+.pk-video-content .pk-tab-content {
+	background-color: white;
+	border-left: 1px solid #f9f9f9;
+	border-right: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f9f9f9;
+	padding : 5px 10px;
+	
+}
+
+.pk-video-content .tab-content {
+	height: 375px;
+	overflow-y:scroll;
+}
+
+/* subtitle */
+.pk-video-caption-option {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pk-video-caption-icon  {
+	padding: 5px !important;
+}
+
+.pk-video-caption-icon  .active{
+	color: #ff8100;
+}
+
+.pk-video-caption-detail p{
+	margin: 0 0 0px;
+}
+.pk-video-caption-detail .main{
+	font-weight: bold;
+}
+
+.pk-video-caption-word {
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+

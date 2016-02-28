@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PikaSmart</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css"  href="general.css">
+		<link rel="stylesheet" type="text/css"  href="video.css">
+		<link rel="stylesheet" type="text/css"  href="jwskin.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<script src="general.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://content.jwplatform.com/libraries/4hzSZKsy.js"></script>
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+		
+	</head>
+	<body >
+		<nav class="navbar navbar-fixed-top pk-navbar" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header col-md-3 col-xs-12">
+						<a class="pk-logo-navbar" href="index.html"><img src="img/logo-picasmart.png" alt="logo" style="width:200px;height:40px"></a>
+					</div>
+					<div class="col-md-3 col-xs-11">
+						<div id="custom-search-input">
+							<div class="input-group">
+								<input type="text" class="search-query form-control" placeholder=" Search" />
+								<span class="input-group-btn">
+									<button class="btn btn-danger" type="button">
+									<span class=" glyphicon glyphicon-search"></span>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-1">
+						<button type = "button" class = "navbar-toggle"	data-toggle = "collapse" data-target = "#navbar-collapse">
+						<span class = "sr-only">Toggle navigation</span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul id="nav" class="nav navbar-nav pull-right pk-navbar-menu">
+							<li class="active"><a href="#" ><span class="pk-heading-navbar">Music</span></a></li>
+							<li><a href="#"><span class="pk-heading-navbar">About Us</span></a></li>
+							<li><a href="#"><span class="pk-heading-navbar">Contact</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="pk-video-fields">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<button class="btn btn-warning">Listening</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pk-video">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12 ">
+						<div id="movieframe">
+							<div id="mediaspace" style="width:100%; height: auto;" ></div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12 pk-video-content">
+						<ul class="nav nav-tabs pk-nav-tabs" role="tablist">
+							<li class="active"><a href="#pk-video-caption" role="tab" data-toggle="tab" aria-expanded="true"> Captions</a></li>
+							<li class=""><a href="#pk-video-words" role="tab" data-toggle="tab" aria-expanded="false">Words</a></li>
+							<li class=""><a href="#pk-video-personel-words" role="tab" data-toggle="tab" aria-expanded="false">Your word</a></li>
+						</ul>
+						<div class="pk-tab-content tab-content">
+							<div class="tab-pane active" id="pk-video-caption">
+								<div class="pk-video-caption-option">
+									Kanji : <input type="checkbox" checked data-toggle="toggle" data-size="mini" data-onstyle="warning">
+									Romanji : <input type="checkbox" checked data-toggle="toggle" data-size="mini" data-onstyle="warning">
+									Vietnam : <input type="checkbox" checked data-toggle="toggle" data-size="mini" data-onstyle="warning">
+								</div>
+								<table class="table table-hover">
+									<tbody>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle active"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-play-circle"></i></td>
+											<td class="pk-video-caption-detail">
+												<p class="kanji main"> 天気がいいなら散歩しましょう。</p>
+												<p class="romanji submain"> tenki ga ii nara, sanpo shimashyo.</p>
+												<p class="vietnamse submain "> Nếu thời tiết đẹp thì hãy đi dạo nào. </p>
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>								
+							</div>
+							<div class="tab-pane" id="pk-video-words">
+								<div class="pk-video-caption-word">
+									<span style="font-weight:bold">Number</span> : 30 words
+								</div>
+								<table class="table table-striped table-hover ">
+									<tbody>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane" id="pk-video-personel-words">
+								<div class="pk-video-caption-word">
+									<span style="font-weight:bold">Number</span> : 5 words
+								</div>
+								<table class="table table-striped table-hover ">
+									<tbody>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-plus-square active"></i></td>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-plus-square active"></i></td>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-plus-square active"></i></td>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-plus-square active"></i></td>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										<tr>
+											<td class="pk-video-caption-icon"><i class="fa fa-plus-square active"></i></td>
+											<td class="first-column">深まる [ふかまる]</td>
+											<td class="third-column"> Deepen, become deeper</td>
+										</tr>
+										
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pk-related-video">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2> Related videos </h2>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="video.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="projectdetail.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="projectdetail.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="projectdetail.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="projectdetail.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2">
+						<div class="boxcontainer">
+							<img src="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" alt="">
+							<div class="roll" style="opacity: 0;">
+								<div class="wrapcaption">
+									<a href="projectdetail.html"><i class="icon-link captionicons"></i></a>
+									<a data-gal="prettyPhoto[gallery1]" href="http://www.wowthemes.net/demo/serenity/img/temp/masonry/1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
+								</div>
+							</div>
+							<h1><a href="projectdetail.html">Videos title</a></h1>
+							<p>
+								Videos Vietnamese name
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="footer-content">
+							<div class="logo-footer">
+								<h2 class="title">You want to improve ? <span class="text-red">So do We !</span></h2>
+								<p>
+									Veritatis officiis ullam libero quam aliquam, tenetur dolor incidunt praesentium dolorum laborum tempora suscipit quo sapiente.
+								</p>
+								<ul class="social-links">
+									<li class="facebook"><a href="#"><img class="social" src="img/fb.png"></a></li>
+									<li class="twitter"><a href="#"><img class="social" src="img/twitter.png"></a></li>
+									<li class="youtube"><a href="#"><img class="social" src="img/youtube.png"></a></li>
+								</ul>
+								<a href="#" class="link"><span class="text-red" id="read-more">Read More</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 col-lg-offset-1">
+						<div class="footer-content">
+							<h2 class="title"> Links </h2>
+							<ul class="link">
+								<li><a href="#">Music</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="footer-content">
+							<h2 class="title">Subscribe</h2>
+							<label class="sr-only" for="subscribe">Email address</label>
+							<div class="form-subscribe">
+								<div class="input-group stylish-input-group">
+									<input type="text" class="form-control" placeholder="Email">
+									<span class="input-group-addon">
+										<button type="submit">
+										<span class="icon-gray glyphicon glyphicon-envelope"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-small btn-submit">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+					var currentPosition = 0;
+					var currentState = 0;
+					var periodOrderId = null;
+					
+					jwplayer("mediaspace").setup({
+				controlbar : 'bottom',
+				width: "100%",
+				aspectratio: "4:3",
+				file: "https://www.youtube.com/watch?v=j6A5cTpyA10",
+				events: {
+				onTime: function(event) {
+					// 	changeLyricsSentence();
+					// 	console.log("=======PERIOD ORDER ===========");
+					// 	console.log(periodOrderId);
+				}
+						},
+				tracks: [
+				{ file: "{{asset('assets/lyrics/srt-2')}}", label: "Japanese", kind: "subtitles" }]
+				});
+		</script>
+	</body>
+</html>
